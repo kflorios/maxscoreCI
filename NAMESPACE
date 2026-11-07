@@ -1,0 +1,11 @@
+useDynLib(maxscoreCI, .registration = TRUE)
+importFrom(Rcpp, evalCpp)
+import(DEoptim)
+import(matrixStats)
+
+# Export your package wrapper functions
+export(maxscore_ci)
+export(fit_maxscore_de)
+export(fit_boot_de)
+
+# Rcpp exported functions will be automatically exported via compileAttributes
