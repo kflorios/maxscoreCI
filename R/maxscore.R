@@ -1,4 +1,5 @@
 #' Maximum Score Estimation and 95% Confidence Interval Calculation
+#'
 #' @param y Numeric vector of binary dependent variable (0 or 1).
 #' @param X Numeric matrix of independent variables.
 #' @param B Number of bootstrap replications (default 50).
@@ -8,7 +9,7 @@
 #' @param x1_coef Coefficient for the first column of X (must be either 1 or -1; default is 1).
 #' @return A list containing the point estimates and 95% confidence intervals.
 #' @export
-maxscore_ci <- function(y, X, B = 50, plugin_bw = 2.0, num_eps = 0.5, n_starts = 3, x1_coef = 1) {
+maxscore_ci <- function(y, X, B = 50, plugin_bw = 0.8, num_eps = 0.5, n_starts = 3, x1_coef = 1) {
   if (!(x1_coef %in% c(1, -1))) {
     stop("Parameter 'x1_coef' must be either 1 or -1.")
   }
