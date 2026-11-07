@@ -37,7 +37,7 @@ if (!requireNamespace("devtools", quietly = TRUE)) {
 }
 
 # Install maxscoreCI from GitHub
-devtools::install_github("kflorios/maxscoreCI")
+devtools::install_github("kflorios/maxscoreCI", args = c("--no-lock", "--no-multiarch"))
 ```
 
 ### Windows Prerequisites
