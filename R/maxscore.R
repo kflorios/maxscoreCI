@@ -1,4 +1,4 @@
-#' Maximum Score Estimation and 95% Confidence Interval Calculation
+#' Maximum Score Estimation and 95 per cent Confidence Interval Calculation
 #'
 #' @param y Numeric vector of binary dependent variable (0 or 1).
 #' @param X Numeric matrix of independent variables.
@@ -7,7 +7,7 @@
 #' @param num_eps Epsilon for numerical derivative (default 0.5).
 #' @param n_starts Number of DEoptim random restarts for global optimization (default 3).
 #' @param x1_coef Coefficient for the first column of X (must be either 1 or -1; default is 1).
-#' @return A list containing the point estimates and 95% confidence intervals.
+#' @return A list containing the point estimates and 95 per cent confidence intervals.
 #' @export
 maxscore_ci <- function(y, X, B = 50, plugin_bw = 0.8, num_eps = 0.5, n_starts = 3, x1_coef = 1) {
   if (!(x1_coef %in% c(1, -1))) {
