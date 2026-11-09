@@ -8,7 +8,7 @@ maxscore_ci(
   y,
   X,
   B = 50,
-  plugin_bw = 0.8,
+  plugin_bw = 2,
   num_eps = 0.5,
   n_starts = 3,
   x1_coef = 1
