@@ -2,7 +2,7 @@
 % Please edit documentation in R/maxscore.R
 \name{maxscore_ci}
 \alias{maxscore_ci}
-\title{Maximum Score Estimation and 95% Confidence Interval Calculation}
+\title{Maximum Score Estimation and 95 per cent Confidence Interval Calculation}
 \usage{
 maxscore_ci(
   y,
@@ -30,8 +30,8 @@ maxscore_ci(
 \item{x1_coef}{Coefficient for the first column of X (must be either 1 or -1; default is 1).}
 }
 \value{
-A list containing the point estimates and 95% confidence intervals.
+A list containing the point estimates and 95 per cent confidence intervals.
 }
 \description{
-Maximum Score Estimation and 95% Confidence Interval Calculation
+Maximum Score Estimation and 95 per cent Confidence Interval Calculation
 }
